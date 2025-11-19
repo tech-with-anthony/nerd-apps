@@ -24,7 +24,7 @@
     sudo apt install tree -y
     sudo apt install snapd -y
 #install steam
-    sudo snap install steam -y
+    sudo snap install steam
 #install heroic games launcher
     wget https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.18.1/Heroic-2.18.1-linux-amd64.deb
     sudo dpkg -i Heroic*amd64.deb
@@ -34,9 +34,9 @@
     sudo apt update
     sudo apt install lutris -y
 #install Discord
-    sudo snap install discord -y
+    sudo snap install discord
 #install google chrome
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     sudo dpkg -i google-chrome-stable_current_amd64.deb
 #install vs code
-    sudo snap install code --classic -y
+    sudo snap install code --classic
