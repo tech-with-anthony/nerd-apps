@@ -27,16 +27,28 @@
     sudo snap install steam
 #install heroic games launcher
     wget https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.18.1/Heroic-2.18.1-linux-amd64.deb
-    sudo dpkg -i Heroic*amd64.deb -y
+    sudo dpkg -i Heroic*amd64.deb
+<<<<<<< HEAD
 #install lutris
     echo -e "Types: deb\nURIs: https://download.opensuse.org/repositories/home:/strycore/Debian_12/\nSuites: ./\nComponents: \nSigned-By: /etc/apt/keyrings/lutris.gpg" | sudo tee /etc/apt/sources.list.d/lutris.sources > /dev/null
     wget -q -O- https://download.opensuse.org/repositories/home:/strycore/Debian_12/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/lutris.gpg
     sudo apt update
     sudo apt install lutris -y
+=======
+#install lutris (still needs work before going live. repo returns unauthenticated key)
+    # echo -e "Types: deb\nURIs: https://download.opensuse.org/repositories/home:/strycore/Debian_12/\nSuites: ./\nComponents: \nSigned-By: /etc/apt/keyrings/lutris.gpg" | sudo tee /etc/apt/sources.list.d/lutris.sources > /dev/null
+    # wget -q -O- https://download.opensuse.org/repositories/home:/strycore/Debian_12/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/lutris.gpg
+    # sudo apt update
+    # sudo apt install lutris -y
+>>>>>>> b13b79c (temp comment out of lutris install due to errors. removed -y command for snapd installs)
 #install Discord
     sudo snap install discord
 #install google chrome
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     sudo dpkg -i google-chrome-stable_current_amd64.deb
 #install vs code
-    sudo snap install code --classic -y
+<<<<<<< HEAD
+    sudo snap install code --classic
+=======
+    sudo snap install code --classic
+>>>>>>> b13b79c (temp comment out of lutris install due to errors. removed -y command for snapd installs)
